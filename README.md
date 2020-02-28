@@ -136,6 +136,36 @@ If FILENAME is not given, the results will be printed to stdout.
 * 截屏并将图片存储到sdcard：screencap -p /sdcard/tmp.png
 * 将截屏导出到电脑：adb pull /sdcard/tmp.png ./
 
+
+### screenrecord
+录屏
+```doc
+Usage: screenrecord [options] <filename>
+
+Android screenrecord v1.2.  Records the device's display to a .mp4 file.
+
+Options:
+--size WIDTHxHEIGHT
+    Set the video size, e.g. "1280x720".  Default is the device's main
+    display resolution (if supported), 1280x720 if not.  For best results,
+    use a size supported by the AVC encoder.
+--bit-rate RATE
+    Set the video bit rate, in bits per second.  Value may be specified as
+    bits or megabits, e.g. '4000000' is equivalent to '4M'.  Default 4Mbps.
+--bugreport
+    Add additional information, such as a timestamp overlay, that is helpful
+    in videos captured to illustrate bugs.
+--time-limit TIME
+    Set the maximum recording time, in seconds.  Default / maximum is 180.
+--verbose
+    Display interesting information on stdout.
+--help
+    Show this message.
+
+Recording continues until Ctrl-C is hit or the time limit is reached.
+
+```
+
 ## 非adb命令
 ### aapt
 获取包名和主界面，添加文件到apk中/删除apk中的文件
