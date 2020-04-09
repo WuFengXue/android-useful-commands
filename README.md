@@ -166,7 +166,21 @@ Recording continues until Ctrl-C is hit or the time limit is reached.
 
 ```
 
+### reboot
+重启或关机
+```doc
+usage: reboot [-p] [rebootcommand]
+```
+
+* 重启：reboot
+* 重启至 recovery 模式：reboot recovery
+* 重启至 bootloader 模式：reboot bootloader
+* 关机：reboot -p
+
+
+
 ## 非adb命令
+
 ### aapt
 获取包名和主界面，添加文件到apk中/删除apk中的文件
 
