@@ -3,7 +3,20 @@
 
 ## adb 命令
 
+###logcat
+
+- 输出重定向到文件，且可以不连电脑，命令如下（【&】代表后台执行）：
+
+```shell
+adb shell "logcat -f /sdcard/tmp/logs/log_20200909.txt &”
+
+adb shell "mkdir -p /sdcard/amap_sctx/"
+
+adb shell "logcat -f /sdcard/amap_sctx/ucar.log -s sctx &"
+```
+
 ### wm
+
 获取/修改设备分辨率
 
 ```
