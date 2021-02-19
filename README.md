@@ -42,6 +42,7 @@ dump: creates an XML dump of current UI hierarchy
 
 * dumpsys activity | grep Focus
 * dumpsys window windows | grep Focus
+* 安卓10：dumpsys activity activities | grep Resumed
 
 ### am
 命令行启动应用
